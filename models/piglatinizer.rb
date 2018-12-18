@@ -7,7 +7,7 @@ class PigLatinizer
     @words = words
   end
 
-  def latinize(words)
+  def piglatinize(words)
     alphabet = ('a'..'z').to_a
     vowels = %w[a e i o u]
     consonants = alphabet - vowels
