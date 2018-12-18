@@ -9,7 +9,6 @@ class PigLatinizer
 
   def wordsplit(words)
     words.split(" ")
-    binding.pry
     words
   end
 
