@@ -6,4 +6,10 @@ class PigLatinizer
   def initialize(words)
     @words = words.downcase
   end
+
+  def latinize
+    words.each do |a|
+      binding.pry
+    end
+  end
 end
