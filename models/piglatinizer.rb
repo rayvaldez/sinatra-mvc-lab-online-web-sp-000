@@ -8,9 +8,9 @@ class PigLatinizer
   end
 
   def piglatinize(words)
-    char1 = word[0]
-    char2 = word[1]
-    char3 = word[2]
+    char1 = words[0]
+    char2 = words[1]
+    char3 = words[2]
 
     words.rotate
     words.flatten
