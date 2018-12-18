@@ -8,6 +8,13 @@ class PigLatinizer
   end
 
   def piglatinize(words)
-    binding.pry
+    word = words.split("")
+    char1 = word[0]
+    char2 = word[1]
+    char3 = word[2]
+
+    word.rotate
+    word
+    
   end
 end
