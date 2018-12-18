@@ -10,7 +10,7 @@ class PigLatinizer
   def piglatinize(words)
     alphabet = ('a'..'z').to_a
     vowels = %w[a e i o u]
-    consonants = alpha - vowels
+    consonants = alphabet - vowels
 
     if vowels.include?(words[0])
       words + 'ay'
