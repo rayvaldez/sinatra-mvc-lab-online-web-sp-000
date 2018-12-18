@@ -21,5 +21,6 @@ class PigLatinizer
         words.slice!(pre)
         words << pre + 'ay'
       end
+    end
   end
 end
