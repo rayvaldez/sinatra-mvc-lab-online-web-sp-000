@@ -14,8 +14,6 @@ class PigLatinizer
 
     if words.split(" ").size > 1
       words.split(" ")
-    end
-
     if words.start_with?('I','u','E')
       words + 'way'
     elsif vowels.include?(words[0])
@@ -29,6 +27,7 @@ class PigLatinizer
     else
       words
     end
+  end
   end
 
 end
