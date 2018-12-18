@@ -8,13 +8,8 @@ class PigLatinizer
   end
 
   def piglatinize(words)
-    array = words.split("")
-    binding.pry
-    while array[0] =~ /\A(?=[^aeiou])(?=[a-z])/i
-      array.rotate
+    if words.start_with?(/[aeiou]/)
+      words << 'ay'
     end
-  #  else
-    #  array.rotate.push('a', 'y').join
-  #  end
   end
 end
