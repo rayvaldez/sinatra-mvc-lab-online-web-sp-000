@@ -8,7 +8,7 @@ class PigLatinizer
   end
 
   def piglatinize(words)
-    if words.start_with?(/[aeiou]/)
+    if words.downcase.start_with?('a', 'e', 'i', 'o', 'u')
       words << 'ay'
     end
   end
