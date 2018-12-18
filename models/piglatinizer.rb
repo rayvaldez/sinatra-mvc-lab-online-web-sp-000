@@ -17,7 +17,7 @@ class PigLatinizer
         break unless pos.nil?
       end
       unless pos.nil?
-        pre = words.partition(word[pos, 1]).first
+        pre = words.partition(words[pos, 1]).first
         words.slice!(pre)
         words << pre + 'ay'
       end
