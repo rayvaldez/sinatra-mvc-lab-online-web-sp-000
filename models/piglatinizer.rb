@@ -9,5 +9,7 @@ class PigLatinizer
 
   def latinize
     words.each do |a|
+      binding.pry
+    end
   end
 end
