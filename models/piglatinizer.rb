@@ -10,7 +10,6 @@ class PigLatinizer
   def piglatinize(words)
     array = words.split("")
     while array[0] =~ /\A[^aeiou]/
-      binding.pry
       array.rotate
     end
   #  else
