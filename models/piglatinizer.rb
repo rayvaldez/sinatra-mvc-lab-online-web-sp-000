@@ -12,9 +12,9 @@ class PigLatinizer
     while array[0] =~ /\A[^aeiou]/
       binding.pry
       array.rotate
-    else
-      array.rotate.push('a', 'y').join
     end
-  end
+  #  else
+    #  array.rotate.push('a', 'y').join
+  #  end
   end
 end
