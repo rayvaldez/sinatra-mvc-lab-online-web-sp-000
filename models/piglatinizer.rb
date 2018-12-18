@@ -15,6 +15,6 @@ class PigLatinizer
 
     word.rotate(1)
     word.join("")
-
+    word
   end
 end
