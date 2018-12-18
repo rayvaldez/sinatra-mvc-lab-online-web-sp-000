@@ -8,7 +8,7 @@ class PigLatinizer
   end
 
   def piglatinize(words)
-    if words.start_with?('a', 'e', 'i', 'o', 'u')
+    if words.start_with?('a', 'e', 'i', 'o', 'u').downcase
       words << 'way'
     else
       words.split("").rotate.push('a', 'y').join
