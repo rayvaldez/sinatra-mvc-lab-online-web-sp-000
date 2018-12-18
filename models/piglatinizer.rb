@@ -14,6 +14,6 @@ class PigLatinizer
     else
       array.split("").rotate.push('a', 'y').join
     end
-    array
+    
   end
 end
