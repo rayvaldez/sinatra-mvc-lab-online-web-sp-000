@@ -4,7 +4,7 @@ class PigLatinizer
   attr_accessor :words
 
   def initialize
-    @words = words.split(" ")
+    @words = words
   end
 
   def piglatinize(words)
