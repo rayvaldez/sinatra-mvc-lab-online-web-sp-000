@@ -8,7 +8,7 @@ class PigLatinizer
   end
 
   def piglatinize(words)
-    array = words.split("").downcase
+    array = words.split("")
     while array[0] =~ /\A[^aeiou]/
       binding.pry
       array.rotate
