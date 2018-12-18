@@ -19,7 +19,7 @@ class PigLatinizer
     elsif consonants.include?(words[0]) && consonants.include?(words[1])
       words[2..-1] + words[0..1] + 'ay'
     elsif consonants.include?(words[0]) && consonants.include?(words[1]) && consonants.include?(words[2])
-      words[2..-1] + words[0..1] + 'ray'
+      words[3..-1] + words[0..1] + 'ay'
     elsif consonants.include?(words[0])
       words[1..-1] + words[0] + 'ay'
     else
