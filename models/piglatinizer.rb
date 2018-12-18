@@ -12,6 +12,7 @@ class PigLatinizer
     vowels = %w[a e i o u]
     consonants = alphabet - vowels
 
+    binding.pry
     if words.start_with?('I','u','E')
       words + 'way'
     elsif vowels.include?(words[0])
