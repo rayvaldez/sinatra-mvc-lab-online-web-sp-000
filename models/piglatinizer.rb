@@ -8,10 +8,13 @@ class PigLatinizer
   end
 
   def piglatinize(words)
-    array = words.split(" ")
     alphabet = ('a'..'z').to_a
     vowels = %w[a e i o u]
     consonants = alphabet - vowels
+
+    if words.split(" ").size > 1
+      words.split(" ")
+    end
 
     if words.start_with?('I','u','E')
       words + 'way'
