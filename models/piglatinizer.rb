@@ -8,19 +8,18 @@ class PigLatinizer
   end
 
   def piglatinize(words)
-    if words.start_with?('a', 'e', 'i', 'I', 'o', 'u')
-      words << 'way'
+    alphabet = ('a'..'z').to_a
+    vowels = %w[a e i o u]
+    consonants = alpha - vowels
+
+    if vowels.include?(words[0])
+      words + 'ay'
+    elsif consonants.include?(words[0]) && consonants.include?(words[1])
+      words[2..-1] + words[0..1] + 'ay'
+    elsif consonants.include?(words[0])
+      words[1..-1] + words[0] + 'ay'
     else
-      pos = nil
-      ['a', 'e', 'i', 'o', 'u'].each do |vowel|
-        pos = words.index(vowel)
-        break unless pos.nil?
-      end
-      unless pos.nil?
-        pre = words.partition(words[pos, 1]).first
-        words.slice!(pre)
-        words << pre + 'ay'
-      end
+      words
     end
   end
 end
