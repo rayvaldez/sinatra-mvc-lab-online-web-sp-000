@@ -9,6 +9,5 @@ class PigLatinizer
 
   def latinize(words)
       binding.pry
-    end
   end
 end
