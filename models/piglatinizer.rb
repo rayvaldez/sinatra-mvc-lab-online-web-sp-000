@@ -8,6 +8,7 @@ class PigLatinizer
   end
 
   def piglatinize(words)
+    words.split(" ")
     alphabet = ('a'..'z').to_a
     vowels = %w[a e i o u]
     consonants = alphabet - vowels
