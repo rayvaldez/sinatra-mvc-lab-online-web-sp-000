@@ -13,8 +13,8 @@ class PigLatinizer
     char2 = word[1]
     char3 = word[2]
 
-    word.rotate
+    word.rotate(1)
     word
-    
+
   end
 end
