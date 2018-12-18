@@ -7,7 +7,7 @@ class PigLatinizer
     @words = words
   end
 
-  def piglatinize(words)
+  def piglatin(words)
     alphabet = ('a'..'z').to_a
     vowels = %w[a e i o u]
     consonants = alphabet - vowels
@@ -27,7 +27,7 @@ class PigLatinizer
     end
   end
 
-  def piglatin(sentence)
+  def piglatinize(sentence)
     sentence.split.map{|word| piglatinize(word)}.join(" ")
   end
 
